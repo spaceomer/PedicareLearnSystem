@@ -1,0 +1,147 @@
+body {
+    --color-primary: #4296E3;
+    --color-primary-dark: #3477b3;
+    --color-error: #ca5858;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-bottom-style: solid;
+    border-color: #e6e6e6;
+    border-width: 1px;  
+    margin-bottom: 15px;
+}
+
+.email {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.name {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.header > a > span {
+    font-size: 50px;
+    cursor: pointer;
+    color: black;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    height: 80%;
+    grid-gap: 15px;
+}
+
+.userInfo {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid;
+    border-color: #f0f0f0;
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.userCourses {
+    border: 1px solid;
+    border-color: #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.infoTitle {
+    width: 100%;
+    height: 10%;
+    font-size: 30px;
+    
+}
+
+.infoTitle > h3 {
+    margin-bottom: 15px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.userInput {
+    outline: none;
+    background-color: #EDEDED;
+    color: #3a3a3a;
+    font-weight: 100;
+    height: 50px;
+    text-align: right;
+    padding: 1px 1em 1px 1px;
+    font-size: 25px;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif; 
+    border-radius: 11px;
+    border: 0;
+}
+
+.userInput:focus {
+    outline: #4296E3 solid 1px;   
+}
+
+.cours {
+    border: 1px solid;
+    border-color: #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px; 
+    display: flex;  
+    align-items: center;
+    justify-content: right;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.cours2 {
+    border: 1px solid;
+    border-color: #f0f0f0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    padding-right: 15px;
+    padding-left: 15px; 
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.imageCours1 {
+    height: 80px;
+    width: 80px;
+    border-radius: 14px;
+}
+
+.coursTitle {
+    margin-right: 15px;
+}
+
+.coursName {
+    margin: 0;
+}
+.coursDes {
+    margin: 0;
+}

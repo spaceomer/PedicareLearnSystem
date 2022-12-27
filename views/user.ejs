@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/user.css">
+    <title><%= user.name %></title>
+</head>
+<body  dir="rtl"> 
+    <div class="header">
+        <a href="/admin"><span class="material-symbols-outlined">
+            chevron_right
+            </span></a>
+        <div class="firstInfo">
+            <h1 class="name"><%= user.name %></h1>
+            <p class="email"><%= user.email %></p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="userInfo">
+            <div class="infoTitle">
+                <h3>פרטי משתמש:</h3>
+            </div>
+            <div class="info"> 
+                <div>
+                    <p>שם:</p>
+                    <input class="userInput" name="name" type="text" autofocus required value="<%= user.name %>" disabled> 
+                </div>
+                <div>
+                    <p>אמייל:</p>
+                    <input class="userInput" name="email" type="email" autofocus required value="<%= user.email %>" disabled> 
+                </div>
+                <div>
+                    <p>תעודת זהות:</p>
+                    <input class="userInput" name="id" type="number" autofocus required value="<%= user.identity %>" disabled> 
+                </div>
+                <div>
+                    <p>טלפון:</p>
+                    <input class="userInput" name="phone" type="number" autofocus required value="<%= user.phone %>" disabled> 
+                </div>
+            </div>
+        </div>
+        <div class="userCourses">
+            <div class="infoTitle">
+                <h3>קורסים פעילים:</h3>
+            </div>
+            <div class="activeCourses"> 
+                <% courses.forEach(function(cours) { %>
+                    <div class="cours">
+                        <div class="imageCours">
+                            <img class="imageCours1" src="/images/acls.jpeg">
+                        </div>
+                        <div class="coursTitle">
+                            <h1 class="coursName"><%= cours.name %></h1>
+                            <p class="coursDes"><%= cours.description %></p>
+                        </div>
+                    </div>
+                <% }) %> 
+                <div class="cours2">
+                    <span class="material-symbols-outlined">add</span>   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
